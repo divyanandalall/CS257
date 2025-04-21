@@ -27,7 +27,7 @@ def get_mainhue(filename, continent):
         for country_data in reader: 
             #if the continent requested matches the continent in the country's data, the country name and its flag's main hue is printed
             # each continent has an associated number: 1=N.America, 2=S.America, 3=Europe, 4=Africa, 4=Asia, 6=Oceania
-            if (continent == 'north_merica') and country_data[2] == '1':
+            if (continent == 'north_america') and country_data[2] == '1':
                 print(f"{country_data[0]}:{country_data[18]}")
             elif (continent == 'south_america') and country_data[2] == '2':
                 print(f"{country_data[0]}: {country_data[18]}")
